@@ -6,12 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/signup_layout"
-    tools:context=".Signup_Activity">
+    tools:context=".activities.Signup_Activity">
     <ImageView
         android:id="@+id/train_photo"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:foreground="@drawable/train_photo"
+        android:foreground="@drawable/trainphoto1"
         android:contentDescription="@string/app_name" />
 
     <ScrollView
@@ -25,44 +25,51 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/name"
+                android:drawableRight="@drawable/ic_person"
                 android:paddingBottom="40dp"
                 android:layout_marginTop="70dp"
                 android:hint="Name"
+                android:textColorHint="@color/black"
                 android:layout_marginHorizontal="30dp"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/email"
+                android:id="@+id/phoneNumber"
                 android:paddingBottom="40dp"
-                android:hint="E-Mail"
-                android:layout_marginHorizontal="30dp"/>
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/phone_number"
-                android:paddingBottom="40dp"
+                android:drawableRight="@drawable/ic_phone"
                 android:hint="Phone Number"
+                android:textColorHint="@color/black"
                 android:layout_marginHorizontal="30dp"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/password"
                 android:paddingBottom="40dp"
+                android:drawableRight="@drawable/ic_lock"
                 android:hint="Password"
+                android:textColorHint="@color/black"
                 android:layout_marginHorizontal="30dp"/>
+
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/sign_up_btn"
-                android:text="SIGNUP"
-                android:layout_marginTop="70dp"
-                android:layout_marginHorizontal="10dp"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:background="#3CB371"
+                android:text="SignUp"
+                />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:id="@+id/log_in"
-                android:text="Log In"/>
+                android:text="@string/loginhere"
+                android:textColor="	#3CB371"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"/>
         </LinearLayout>
     </ScrollView>
 

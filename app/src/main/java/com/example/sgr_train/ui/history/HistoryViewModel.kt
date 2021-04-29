@@ -1,13 +1,14 @@
-package com.example.sgr_train.ui.slideshow
+package com.example.sgr_train.ui.history
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class SlideshowViewModel : ViewModel() {
+class HistoryViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is slideshow Fragment"
+        value = "Ticket History"
     }
     val text: LiveData<String> = _text
+
 }

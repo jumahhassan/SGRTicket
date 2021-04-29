@@ -11,6 +11,10 @@
     <string name="action_quit">Quit</string>
 
     <string name="menu_home">Home</string>
-    <string name="menu_gallery">History</string>
-    <string name="menu_slideshow">My Profile</string>
+    <string name="menu_history">History</string>
+    <string name="menu_myprofile">My Profile</string>
+
+    <string name="loginhere">Already have an account? <u>Login</u></string>
+    <string name="signuphere">Create a new account? <u>Signup</u></string>
+
 </resources>
